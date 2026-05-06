@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio – Allyson Martínez</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header>
-    <nav>
-      <span>Allyson Martínez 💙</span>
-      <ul>
+    <nav aria-label="Navegación principal">
+      <span class="logo">Allyson Martínez </span>
+      <ul role="list">
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
@@ -21,150 +24,176 @@
   </header>
 
   <main>
-    <section id="sobre-mi">
-      <article>
-        <p>Hola, soy</p>
-        <h1>Allyson Martínez</h1>
-        <h2>Desarrolladora en formación</h2>
+
+    <!-- HERO -->
+    <section id="sobre-mi" aria-labelledby="hero-nombre">
+      <article class="hero-texto">
+        <p class="saludo"> Hola, soy</p>
+        <h1 id="hero-nombre">Allyson Martínez</h1>
+        <h2 class="subtitulo">Desarrolladora en formación</h2>
         <p>Apasionada por la tecnología, el aprendizaje constante y la creación de soluciones que generen impacto.</p>
-        <a href="#DETALLE">Conoce más sobre mí </a>
+        <a href="#detalle" class="btn-primary">Conoce más sobre mí </a>
       </article>
-      <figure>
+      <figure class="hero-foto">
         <img src="img/YO.PNG.png" alt="Foto de perfil de Allyson Martínez" width="260" height="260" />
       </figure>
     </section>
 
-    <section id="DETALLE">
-
-      <article>
-        <h2>Sobre mí</h2>
-        <p>Profesional técnico con experiencia en el área comercial, logística e inventarios, con gran interés en el desarrollo de software</p>
+    
+    <section id="detalle" aria-labelledby="detalle-titulo">
+      <figure class="detalle-img">
+        <img src="img/tulipan.jpg" alt="Decoración floral" width="200" />
+      </figure>
+      <article class="detalle-texto">
+        <h2 id="detalle-titulo">Sobre mí</h2>
+        <p>Profesional técnico con experiencia en el área comercial, logística e inventarios, con gran interés en el desarrollo de software.</p>
         <p>Soy una persona responsable, organizada y con muchas ganas de aprender. Me encanta enfrentar nuevos retos y trabajar en equipo para lograr objetivos comunes.</p>
         <p>Actualmente estoy fortaleciendo mis habilidades en desarrollo de software y metodologías ágiles.</p>
+        <a href="cv/AllysonMartinez-CV.pdf" download class="btn-secondary">Descargar CV ↓</a>
       </article>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <img src="img/PSeint foto.png" alt="Ícono de PSeInt" width="48" />
-          <p>PSeInt</p>
-          <meter min="0" max="5" value="3.5" title="Nivel de PSeInt"></meter>
-        </li>
-        <li>
-          <img src="img/python.jpg" alt="icono de Python" width="48" />
-          <p>Python</p>
-          <meter min="0" max="5" value="3.5" title="Nivel de Python"></meter>
-        </li>
-        <li>
-          <img src="img/git foto.jpg" alt="icono de Git / GitHub" width="48" />
-          <p>Git / GitHub</p>
-          <meter min="0" max="5" value="3.5" title="Nivel de Git y GitHub"></meter>
-        </li>
-        <li>
-          <img src="img/scrm.png" alt="icono de Scrum" width="48" />
-          <p>Scrum</p>
-          <meter min="0" max="5" value="3" title="Nivel de Scrum"></meter>
-        </li>
-        <li>
-          <img src="img/HTML.png" alt="cono de HTML" width="48" />
-          <p>HTML</p>
-          <meter min="0" max="5" value="4" title="Nivel de HTML"></meter>
-        </li>
-      </ul>
+    
+    <section id="skills" aria-labelledby="skills-titulo">
+      <h2 id="skills-titulo">Skills</h2>
+
+      <div class="skills-grupo">
+        <h3>Técnicas</h3>
+        <ul class="skills-lista" role="list">
+          <li>
+            <img src="img/PSeint foto.png" alt="Ícono de PSeInt" width="48" />
+            <p>PSeInt</p>
+            <meter min="0" max="5" value="5" title="Nivel: 5 / 5"></meter>
+          </li>
+          <li>
+            <img src="img/python.jpg" alt="Ícono de Python" width="48" />
+            <p>Python</p>
+            <meter min="0" max="5" value="5" title="Nivel: 5 / 5"></meter>
+          </li>
+          <li>
+            <img src="img/git foto.jpg" alt="Ícono de Git / GitHub" width="48" />
+            <p>Git / GitHub</p>
+            <meter min="0" max="5" value="5" title="Nivel: 5 / 5"></meter>
+          </li>
+          <li>
+            <img src="img/scrm.png" alt="Ícono de Scrum" width="48" />
+            <p>Scrum</p>
+            <meter min="0" max="5" value="5" title="Nivel: 5 / 5"></meter>
+          </li>
+          <li>
+            <img src="img/HTML.png" alt="Ícono de HTML" width="48" />
+            <p>HTML</p>
+            <meter min="0" max="5" value="3.5" title="Nivel: 3.5 / 5"></meter>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-grupo">
+        <h3>Blandas</h3>
+        <ul class="skills-blandas" role="list">
+          <li>Comunicación</li>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Organización</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos destacados</h2>
-      <ul>
+    
+    <section id="proyectos" aria-labelledby="proyectos-titulo">
+      <h2 id="proyectos-titulo">Proyectos destacados ✨</h2>
+      <ul class="proyectos-lista" role="list">
         <li>
-          <article>
+          <article class="proyecto-card">
             <header>
-              <img src="img/lista.png"  />
+              <img src="img/lista.png" alt="Ícono proyecto Cajero" />
               <h3>Cajero</h3>
             </header>
-            <p>Aplicación para gestionar de cajero forma sencilla.</p>
-            <footer>
-              <span>Python</span>
-            </footer>
+            <p>Aplicación para gestionar operaciones de cajero de forma sencilla.</p>
+            <footer><span class="tag">Python</span></footer>
           </article>
         </li>
         <li>
-          <article>
+          <article class="proyecto-card">
             <header>
-              <img src="img/herramientass.png"  />
+              <img src="img/herramientass.png" alt="Ícono proyecto Gestor de herramientas" />
               <h3>Gestor de herramientas</h3>
             </header>
-            <p>Proyecto para crear, editar, eliminar herramientas y usuarios para prestamos.</p>
-            <footer>
-              <span>Python</span>
-            </footer>
+            <p>Proyecto para crear, editar y eliminar herramientas y usuarios para préstamos.</p>
+            <footer><span class="tag">Python</span></footer>
           </article>
         </li>
         <li>
-          <article>
+          <article class="proyecto-card">
             <header>
-              <img src="img/portafolio.png" />
+              <img src="img/portafolio.png" alt="Ícono proyecto Portafolio Web" />
               <h3>Portafolio-Web</h3>
             </header>
             <p>Portafolio personal desarrollado con HTML y CSS.</p>
-            <footer>
-              <span>HTML / CSS</span>
-            </footer>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <section id="repositorios">
-      <h2>Repositorios</h2>
-      <p>Explora mis proyectos y código fuente en GitHub.</p>
-      <a href="https://github.com/ally1507" target="_blank" rel="noopener">Ver todos mis repositorios</a>
-      <ul>
-        <li>
-          <article>
-            <header>
-              <h3>Cajero</h3>
-            </header>
-            <p>Aplicación de cajero.</p>
-            
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <h3>Gestor-de-Herramientas</h3>
-            </header>
-            <p>Proyecto para crear, editar, eliminar herramientas y usuarios para prestamos.</p>
-              <span>Python</span>
-            </footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <h3>Portafolio-Web</h3>
-            </header>
-            <p>Mi portafolio personal con HTML y CSS.</p>
-            <footer>
-              <span>HTML/CSS</span>
-            </footer>
+            <footer><span class="tag">HTML / CSS</span></footer>
           </article>
         </li>
       </ul>
     </section>
 
     
-    <section id="collage">
-      <h2>Collage </h2>
-      <figure>
-        <img src="img/tulipan.jpg" alt="Decoración con velas y plantas" width="150" />
-        <img src="img/compu.jpg" />
-        <img src="img/flor.jpg" alt="Flores rosas" width="150" />
-        <img src="img/cafe.jpg" alt="Café y laptop" width="150" />
-        <img src="img/maquillaje.jpg" alt="Edificio rosado" width="150" />
-        <img src="img/camara.jpg" alt="Decoración minimalista" width="150" />
+    <section id="repositorios" aria-labelledby="repos-titulo">
+      <div class="repos-intro">
+        <h2 id="repos-titulo">Repositorios</h2>
+        <p>Explora mis proyectos y código fuente en GitHub.</p>
+        <a href="https://github.com/ally1507" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Ver todos mis repositorios
+        </a>
+      </div>
+
+      <div class="tabla-wrapper" role="region" aria-label="Tabla de repositorios">
+        <table>
+          <caption class="sr-only">Proyectos trabajados con enlaces a GitHub</caption>
+          <thead>
+            <tr>
+              <th scope="col">Proyecto</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Tecnología</th>
+              <th scope="col">GitHub</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Cajero</td>
+              <td>Aplicación de cajero automático.</td>
+              <td><span class="tag">Python</span></td>
+              <td><a href="https://github.com/ally1507" target="_blank" rel="noopener">Repositorio</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Gestor-de-Herramientas</td>
+              <td>Crear, editar y eliminar herramientas y usuarios para préstamos.</td>
+              <td><span class="tag">Python</span></td>
+              <td><a href="https://github.com/ally1507" target="_blank" rel="noopener">Repositorio</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Portafolio-Web</td>
+              <td>Mi portafolio personal con HTML y CSS.</td>
+              <td><span class="tag">HTML / CSS</span></td>
+              <td><a href="https://github.com/ally1507" target="_blank" rel="noopener">Repositorio</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- COLLAGE -->
+    <section id="collage" aria-labelledby="collage-titulo">
+      <h2 id="collage-titulo">Collage </h2>
+      <figure class="collage-grid">
+        <img src="img/tulipan.jpg"    alt="Decoración con velas y plantas" />
+        <img src="img/compu.jpg"      alt="Laptop de trabajo" />
+        <img src="img/flor.jpg"       alt="Flores rosas" />
+        <img src="img/cafe.jpg"       alt="Café y laptop" />
+        <img src="img/maquillaje.jpg" alt="Edificio rosado" />
+        <img src="img/camara.jpg"     alt="Decoración minimalista" />
       </figure>
     </section>
 
@@ -172,17 +201,38 @@
 
   
   <footer id="contacto">
-    <address>
-      <a href="valmartinez1507@gmail"> valmartinez1507@gmail</a>
-      <a href="tel:+57 312 4795 593"> +57 312 4795 593</a>
-      <span> Colombia</span>
+    <section aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo">Contacto</h2>
+
+      <form action="#" method="post" class="form-contacto" aria-label="Formulario de contacto">
+        <div class="form-grupo">
+          <label for="txt-nombre">Nombre</label>
+          <input id="txt-nombre" type="text" name="nombre" placeholder="Ej: Juan García" required />
+        </div>
+        <div class="form-grupo">
+          <label for="txt-email">Correo electrónico</label>
+          <input id="txt-email" type="email" name="email" placeholder="Ej: correo@mail.com" required />
+        </div>
+        <div class="form-grupo form-grupo--full">
+          <label for="txt-mensaje">Mensaje</label>
+          <textarea id="txt-mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar mensaje 🤍</button>
+      </form>
+    </section>
+
+    <address class="footer-info">
+      <a href="mailto:valmartinez1507@gmail.com">✉️ valmartinez1507@gmail.com</a>
+      <a href="tel:+573124795593">📞 +57 312 4795 593</a>
+      <span>📍 Colombia</span>
     </address>
-    <nav aria-label="Redes sociales">
-      <a href="https://github.com/ally1507" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+
+    <nav aria-label="Redes sociales" class="footer-redes">
+      <a href="https://github.com/ally1507" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
-    <p> 2026 Allyson Martínez </p>
+
+    <p class="footer-copy">© 2026 Allyson Martínez. Todos los derechos reservados. 🩷</p>
   </footer>
 
 </body>
-</html>
 </html>
