@@ -513,4 +513,71 @@ table tbody td a:hover {
 .collage-grid img:hover {
     opacity: 0.9;
 }
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(244, 114, 182, 0.12);
+    margin-top: 40px;
+}
  
+footer > section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 40px 40px;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+ 
+footer section h2::after {
+    margin-bottom: 32px;
+}
+ 
+.contacto-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+ 
+.contacto-info {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+ 
+.contacto-dato {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #f8faff;
+    border: 1px solid rgba(244, 114, 182, 0.12);
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+ 
+.contacto-dato:hover {
+    background-color: #fdf2f8;
+    box-shadow: 0 4px 16px rgba(244, 114, 182, 0.1);
+}
+ 
+.contacto-icono {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+ 
+.contacto-icono.email { background-color: #fce7f3; }
+.contacto-icono.phone { background-color: #dbeafe; }
+.contacto-icono.loc   { background-color: #d1fae5; }
+.contacto-icono.git   { background-color: #f1f5f9; }
+ 
+
