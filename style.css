@@ -664,4 +664,118 @@ footer section h2::after {
     justify-content: space-between;
     border-top: 1px solid rgba(244, 114, 182, 0.1);
 }
+ 
+.footer-redes {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+ 
+.footer-redes a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    padding: 6px 14px;
+    border-radius: 30px;
+    border: 1px solid rgba(244, 114, 182, 0.2);
+    text-decoration: none;
+}
+ 
+.footer-redes a:hover {
+    background-color: #fce7f3;
+    color: #f472b6;
+}
+ 
+.footer-copy {
+    font-size: 13px;
+    color: #94a3b8;
+}
 
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(244, 114, 182, 0.15);
+  padding: 30px;
+  text-align: center;
+}
+
+footer address,
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+footer a,
+footer span {
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #f472b6;
+}
+ 
+
+@media (max-width: 900px) {
+    #sobre-mi {
+        flex-direction: column-reverse;
+        text-align: center;
+        min-height: auto;
+        padding: 60px 20px;
+    }
+    #sobre-mi .hero-texto,
+    #sobre-mi .hero-foto  { 
+        width: 100%; }
+ 
+    #detalle {
+        flex-direction: column;
+        text-align: center;
+    }
+    #detalle .detalle-img,
+    #detalle .detalle-texto { width: 100%; }
+ 
+    #repositorios {
+        flex-direction: column;
+    }
+    .repos-intro { width: 100%; }
+ 
+    .contacto-grid { flex-direction: column; }
+    .contacto-info { width: 100%; }
+ 
+    .proyectos-lista li { width: 45%; }
+ 
+    .collage-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 140px);
+    }
+}
+ 
+@media (max-width: 600px) {
+    header nav ul { 
+        display: none;
+     }
+    section {
+         width: 95%; padding: 30px 20px; 
+        }
+ 
+    #sobre-mi .hero-texto h1 { 
+        font-size: 40px; 
+    }
+ 
+    .form-contacto { 
+        grid-template-columns: 1fr; padding: 24px; 
+    }
+ 
+    .proyectos-lista li { 
+         width: 100%; }
+ 
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+ 
