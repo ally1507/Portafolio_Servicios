@@ -580,4 +580,88 @@ footer section h2::after {
 .contacto-icono.loc   { background-color: #d1fae5; }
 .contacto-icono.git   { background-color: #f1f5f9; }
  
+.contacto-dato-texto small {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+ 
+.contacto-dato-texto span,
+.contacto-dato-texto a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e293b;
+    text-decoration: none;
+}
+ 
+.form-contacto {
+    flex: 1;
+    background-color: #fdf2f8;
+    border: 1px solid rgba(244, 114, 182, 0.15);
+    border-radius: 22px;
+    padding: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+ 
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+ 
+.form-grupo--full {
+    grid-column: 1 / -1;
+}
+ 
+.form-grupo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    letter-spacing: 0.03em;
+}
+ 
+.form-grupo input,
+.form-grupo textarea {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+    background-color: #ffffff;
+    border: 1.5px solid rgba(244, 114, 182, 0.2);
+    border-radius: 10px;
+    padding: 12px 16px;
+    outline: none;
+    resize: vertical;
+}
+ 
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #94a3b8;
+}
+ 
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.12);
+}
+ 
+.form-contacto .btn-primary {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+ 
+.footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(244, 114, 182, 0.1);
+}
 
